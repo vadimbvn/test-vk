@@ -1,0 +1,83 @@
+{
+  "action": "https://echo.htmlacademy.ru",
+  "method": "POST",
+  "name-group": [
+    {
+      "label": "Фамилия",
+      "type": "text",
+      "id": "last_name",
+      "name": "last_name",
+      "placeholder": "Введите Фамилию*",
+      "required": "required"
+    },
+    {
+      "label": "Имя",
+      "type": "text",
+      "id": "first_name",
+      "name": "first_name",
+      "placeholder": "Введите Имя*",
+      "required": "required"
+    },
+    {
+      "label": "Отчество",
+      "type": "text",
+      "id": "second_name",
+      "name": "second_name",
+      "placeholder": "Введите Очество, если есть"
+    }
+    ],
+  "info": [
+    {
+      "label": "Номер телефона",
+      "type": "tel",
+      "id": "mobile_phone",
+      "name": "mobile_phone",
+      "placeholder": "+7-XXX-XXX-XX-XX*",
+      "required": "required"
+    },
+    {
+      "label": "Адрес почты",
+      "type": "email",
+      "id": "email",
+      "name": "email",
+      "placeholder": "E-mail*",
+      "required": "required"
+    },
+    {
+      "label": "Дата рождения",
+      "type": "number",
+      "id": "birthday",
+      "name": "birthday",
+      "placeholder": "20-12-1990",
+      "date": [
+        {
+          "type": "number",
+          "min": "1",
+          "max": "31",
+          "name": "day"
+        },
+        {
+          "type": "number",
+          "min": "1",
+          "max": "12",
+          "name": "month"
+        },
+        {
+          "type": "number",
+          "min": "1900",
+          "max": "2021",
+          "name": "year"
+        }
+      ]
+    }
+  ],
+  "form": {
+    "url": "https://echo.htmlacademy.ru",
+    "method": "POST"
+  },
+  "button": {
+    "text": "Отправить",
+    "type": "sumbit",
+    "description": "* - ОБЯЗАТЕЛЬНЫЕ ДЛЯ ЗАПОЛНЕНИЯ ПОЛЯ"
+  }
+}
